@@ -14,8 +14,6 @@
 				<span>VERSIÖN</span>
 			</div>
 			<div>
-				<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-
 				<div class="char_dropdown button_small">
 					<div>CREATE A CHARACTER</div>
 					<menu>
@@ -81,9 +79,6 @@
 			</tr>
 		</tfoot>
 	</table>
-	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
-		<input id='file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
-	</form>
 	<script>
 		var json;
 		var tbody = document.getElementsByTagName('tbody')[0];
